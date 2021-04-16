@@ -44,6 +44,7 @@ ma60 = go.Scatter(x=df.index, y=df['MA60'], line=dict(color='green', width=0.9),
 
 # Create a plot
 fig = go.Figure(data=[candlestick, ma5, ma20, ma60])
+# 레이아웃 설정 - 타이틀
 fig.update_layout(title=dict(text='비트코인 일 차트', x=0.5))
 # Show the Plot
 fig.show()
